@@ -58,6 +58,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.usb.default \
     audio.r_submix.default \
+    sound_trigger.primary.sm6150 \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
