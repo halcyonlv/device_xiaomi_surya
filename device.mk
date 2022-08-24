@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+
 # Product launched with 10.0
 PRODUCT_SHIPPING_API_LEVEL := 29
 
