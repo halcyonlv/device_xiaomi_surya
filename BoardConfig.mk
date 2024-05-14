@@ -89,9 +89,6 @@ BOARD_MKBOOTIMG_ARGS := --header_version 2
 TARGET_KERNEL_CONFIG := surya_defconfig vendor/debugfs.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
-# LMKD
-TARGET_LMKD_STATS_LOG := true
-
 # Media
 TARGET_USES_ION := true
 
