@@ -272,6 +272,7 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 
 PRODUCT_PACKAGES += \
     J20CCarrierConfig \
+    J20CDeviceAsWebcam \
     J20CFrameworks \
     J20CLauncher3 \
     J20CSettings \

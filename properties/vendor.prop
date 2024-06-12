@@ -255,3 +255,6 @@ wifi.aware.interface=wifi-aware0
 
 # System properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
+
+# USB
+ro.usb.uvc.enabled=true
