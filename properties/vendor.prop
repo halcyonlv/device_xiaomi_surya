@@ -29,3 +29,6 @@ persist.vendor.cp.vbus_offset_mv=1040
 
 # System properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
+
+# USB
+ro.usb.uvc.enabled=true

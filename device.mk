@@ -83,6 +83,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     J20CAperture \
+    J20CDeviceAsWebcam \
     J20CFrameworks \
     J20CSystemUI \
     KarnaFrameworks \
