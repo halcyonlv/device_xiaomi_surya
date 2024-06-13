@@ -39,6 +39,8 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.sm6150
 
 PRODUCT_PACKAGES += \
+    libaudioroute.vendor \
+    libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -275,7 +277,11 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libOmxVidcCommon \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_omx \
+    libstagefright_foundation \
+    libstagefright_softomx_plugin.vendor \
+    libstagefright_softomx.vendor
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8150/media/conf_files/sm6150/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -294,6 +300,7 @@ PRODUCT_COPY_FILES += \
 
 # Network
 PRODUCT_PACKAGES += \
+    libnetutils.vendor \
     android.system.net.netd@1.1.vendor
 
 PRODUCT_COPY_FILES += \
@@ -380,6 +387,7 @@ PRODUCT_PACKAGES += \
     libjson \
     libril \
     librilutils \
+    libsqlite.vendor \
     librmnetctl
 
 # Recovery
