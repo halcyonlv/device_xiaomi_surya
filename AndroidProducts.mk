@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_surya.mk
+    $(LOCAL_DIR)/halcyon_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_surya-user \
-    lineage_surya-userdebug \
-    lineage_surya-eng
+    halcyon_surya-user \
+    halcyon_surya-userdebug \
+    halcyon_surya-eng
