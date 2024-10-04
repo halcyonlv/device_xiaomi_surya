@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
 # GCAMGO
-$(call inherit-product, vendor/gcgop/config.mk)
+$(call inherit-product, vendor/xiaomi/surya-gcgop/config.mk)
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -330,7 +330,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-halcyon
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
@@ -416,7 +416,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/halcyon/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi
 
