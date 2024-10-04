@@ -1,0 +1,26 @@
+[
+    {
+        "remote": "halcyon-devices",
+        "repository": "kernel_xiaomi_surya",
+        "branch": "ursinia",
+        "target_path": "kernel/xiaomi/surya"
+    },
+    {
+        "remote": "halcyon-blobs",
+        "repository": "vendor_xiaomi_surya",
+        "branch": "ursinia",
+        "target_path": "vendor/xiaomi/surya"
+    },
+    {
+        "remote": "halcyon-blobs",
+        "repository": "firmware_xiaomi_surya",
+        "branch": "ursinia",
+        "target_path": "firmware/xiaomi/surya"
+    },
+    {
+        "remote": "halcyon-blobs",
+        "repository": "vendor_xiaomi_surya-gcgop",
+        "branch": "ursinia",
+        "target_path": "vendor/xiaomi/surya-gcgop"
+    },
+]
