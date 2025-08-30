@@ -83,9 +83,6 @@ BOARD_MKBOOTIMG_ARGS := --header_version 2
 TARGET_KERNEL_CONFIG := surya_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/surya
 
-# Media
-TARGET_USES_ION := true
-
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
