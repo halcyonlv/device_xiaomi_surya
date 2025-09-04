@@ -29,6 +29,9 @@ $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-surya/device.mk)
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
@@ -268,7 +271,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
 PRODUCT_PACKAGES += \
-    J20CAperture \
     J20CCarrierConfig \
     J20CFrameworks \
     J20CLauncher3 \
@@ -283,6 +285,11 @@ PRODUCT_PACKAGES += \
     SuryaFrameworks \
     SuryaSettingsProvider \
     SuryaWifiResources
+
+ifeq ($(wildcard vendor/xiaomi/miuicamera-surya/device.mk),)
+    PRODUCT_PACKAGES += \
+        J20CAperture
+endif
 
 # Partitions
 PRODUCT_PACKAGES += \
