@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/xiaomi/surya
 
+# MiuiCamera
+-include device/xiaomi/miuicamera-surya/BoardConfig.mk
+
 # Inherit from proprietary files
 include vendor/xiaomi/surya/BoardConfigVendor.mk
 

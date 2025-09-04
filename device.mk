@@ -29,6 +29,9 @@ $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-surya/device.mk)
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
