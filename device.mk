@@ -20,6 +20,9 @@ $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/surya-miuicamera/miuicamera.mk)
 
+# Firmware
+$(call inherit-product, vendor/xiaomi/surya/Android.mk)
+
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 29
 
