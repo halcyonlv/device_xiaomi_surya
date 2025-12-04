@@ -69,7 +69,7 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_PACKAGES += \
-    android.hardware.nfc-service.nxp
+    android.hardware.nfc@1.2-service
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_surya/android.hardware.nfc.xml \

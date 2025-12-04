@@ -13,9 +13,10 @@ on post-fs && property:ro.boot.product.hardware.sku=surya
 on post-fs && property:ro.boot.product.hardware.sku=karna
     mount none /vendor/firmware_mnt/image/bdf_j20i.bin /vendor/firmware_mnt/image/bdwlan.bin bind
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
-    class early_hal
+    class hal
     user nfc
-    group nfc drmrpc system
+    group nfc
+    task_profiles ServiceCapacityLow
     disabled
