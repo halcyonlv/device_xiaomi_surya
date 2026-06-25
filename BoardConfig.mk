@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2025 The LineageOS Project
+#Copyright (C) 2020-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -67,6 +67,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
+TARGET_KERNEL_CLANG_VERSION := r563880c
 TARGET_KERNEL_CONFIG := vendor/sdmsteppe-perf_defconfig vendor/surya.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
 
