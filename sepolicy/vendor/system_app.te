@@ -9,4 +9,7 @@ binder_call(system_app, hal_power_default)
 binder_call(system_app, wificond)
 binder_call(system_app, vold)
 
+# FM
+hal_client_domain(system_app, vendor_hal_fm)
+
 get_prop(system_app, vendor_bluetooth_prop)
