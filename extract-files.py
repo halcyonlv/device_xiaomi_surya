@@ -90,6 +90,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed("libcrypto_shim.so"),
     'vendor/lib64/camera/components/com.vidhance.node.eis.so': blob_fixup()
         .call(blob_fixup_graphic_buffer_size),
+    # Don't mark the front and rear cameras as conflicting, AOSP cameraserver refuses to open both for dual video
+    'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
+        .sig_replace('fb 33 40 f9 f4 2b 40 f9 1b 12 00 b4 f4 11 00 b4', 'fb 33 40 f9 f4 2b 40 f9 90 00 00 14 f4 11 00 b4'),
     ('vendor/lib64/libalAILDC.so', 'vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
